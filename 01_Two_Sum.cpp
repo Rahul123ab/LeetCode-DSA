@@ -9,7 +9,7 @@ class Solution{
             int second = target - first; //calculate the second element or complement to achieve target
 
             if(map.find(second) != map.end()){ //check if second value already exists in the map
-                return {i,map[second]};
+                return {map[second],i};
             }
             map[nums[i]]=i; //just add the current array element to the map
         }
